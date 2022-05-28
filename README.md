@@ -1,1 +1,1 @@
-# QT_Dersleri
+# QT Dersleri
