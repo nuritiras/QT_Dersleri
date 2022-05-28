@@ -19,7 +19,14 @@
   <property name="windowTitle">
    <string>Kullanıcı Girişi</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icons/Hello.ico</normaloff>:/icons/icons/Hello.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/background/background/back.jpg);</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -52,7 +59,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QFrame" name="">
+         <widget class="QFrame" name="frame">
           <property name="styleSheet">
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
@@ -192,7 +199,7 @@
           </property>
           <property name="styleSheet">
            <string notr="true">color: rgb(255, 255, 255);
-border-raius:5px;
+border-radius:5px;
 background-color: rgb(170, 0, 0);</string>
           </property>
           <property name="text">
@@ -244,6 +251,8 @@ background-color: rgb(170, 0, 0);</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
